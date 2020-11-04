@@ -54,6 +54,24 @@ navLinks[3].textContent=siteContent.nav["nav-item-4"]
 navLinks[4].textContent=siteContent.nav["nav-item-5"]
 navLinks[5].textContent=siteContent.nav["nav-item-6"]
 
+for (let i=0; i<navLinks.length ; i++){
+  navLinks[i].style.color = "green"
+}
+
+const newLink1 = document.createElement("a")
+const newLink2 = document.createElement("a")
+
+newLink1.textContent = "Welcome"
+newLink2.textContent = "Thanks"
+
+const nav = document.querySelector("nav")
+
+nav.appendChild(newLink1);
+nav.appendChild(newLink2);
+
+newLink1.style.color="green"
+newLink2.style.color="green"
+
 /*function navItemsFunc(var){
 
   for(let i=0; i<nav.length ; i++){
